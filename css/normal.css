@@ -19,7 +19,8 @@ html,
 body{
     height: 100%;
     background: linear-gradient(135deg, var(--kolor1), var(--kolor5));
-    -webkit-background-size: 100%;
+    background-size: 400% 400%;
+    animation: bgAnimation 15s infinite;
 }
 
 
@@ -222,6 +223,7 @@ body{
 
 .ButtonMore:hover{
     background-color: var(--kolor3-hover);
+    transform: scale(1.03);
 }
 
 
@@ -310,7 +312,17 @@ body{
      }
 }
 
-
+@keyframes bgAnimation{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
 
