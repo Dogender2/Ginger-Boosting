@@ -1,6 +1,9 @@
 window.addEventListener("scroll", function(){
-    var info = document.querySelector("#in1");
+    //Komunikat
     var games = document.querySelector("#gry");
-    info.classList.toggle("show", window.scrollY > 10);
     games.classList.toggle("show", window.scrollY > 10);
+    
+    //Valorant
+    var Valorant = document.querySelector("#Valorant");
+    Valorant.classList.toggle("show", window.scrollY > 10);
 })

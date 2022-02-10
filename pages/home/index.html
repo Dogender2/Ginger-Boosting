@@ -6,15 +6,22 @@
 
     <title>Ginger Boosting</title>
     
-
+    <!--Stylesheet-->
     <link rel="stylesheet" href="../../css/normal.css">
 
 
+    <!--Ikona-->
     <link rel="shortcut icon" href="../../images/icon.png" type="image/x-icon">
+
 
     <!--Skrytpty-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+
     <script src="../../js/Scroll.js"></script>
+    <script src="../../js/Lng.js"></script>
+    <script src="../../js/SaveSettings.js"></script>
+
 
     <!--Preview-->
     <meta property="og:type" content="website">
@@ -34,28 +41,45 @@
 
 
 <body>
-    <div class="header">
-        <div class="title">
-            <h1>Ginger Boosting</h1>
+    <div id="app">
+
+        <div class="header">
+            <div class="title">
+                <h1>{{Title}}</h1>
+            </div>
         </div>
+
+        <div id="lng">
+            
+        </div>
+    
+        <!--MessageInContainer-->
+        <div class="container">
+            <span>{{ MessageInContainer }}</span>
+        </div>
+    
+        <!--GamesTitle-->
+        <div id="gry" class="games">
+            <div class="title2">
+                <h1>{{ GamesTitle }}</h1>
+            </div>
+        </div>
+    
+        <div id="Valorant" class="info">
+            <div class="contentFlex">
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima optio praesentium tempora mollitia quisquam est repellendus asperiores ipsam, doloribus temporibus reiciendis reprehenderit voluptas, exercitationem nobis laudantium saepe hic ad sit?</span><br />
+                <img src="../../images/Valorant.jpg">
+            </div>
+
+            <button class="ButtonMore">Dowiedz sie wiecej</button>
+        </div>
+
+
+
     </div>
 
-    <div class="container">
-        <span>Masz niski poziom? Brakuje Ci nie duzo stopni karnetu a za chwile nowy sezon a grasz jak syf i tego nie wbijesz? Jesli posiadasz taki problem lub inny zwiazany z wbiciem rangi lub poziomu to ta oferta jest dla ciebie!</span>
-    </div>
 
-    <div id="gry" class="games">
-        <div class="title2">
-            <h1>Gry, ktore obslugujemy:</h1>
-        </div>
-    </div>
-
-    <div id="in1" class="info">
-        <div class="contentFlex">
-            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima optio praesentium tempora mollitia quisquam est repellendus asperiores ipsam, doloribus temporibus reiciendis reprehenderit voluptas, exercitationem nobis laudantium saepe hic ad sit?</span><br />
-            <img src="../../images/Valorant.jpg">
-        </div>
-        <button class="ButtonMore">Dowiedz sie wiecej</button>
-    </div>
+    <!--Vue-->
+    <script src="../../js/Settings.js"></script>
 </body>
 </html>

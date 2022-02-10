@@ -28,6 +28,45 @@ body{
 
 
 
+#lng{
+    float: right;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+#lng button{
+    background-color: var(--kolor3);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#lng button:hover{
+    background-color: var(--kolor3-hover);
+}
+
+
+
+
+
+
+
+
 .title{
     margin-top: 60px;
     margin-left: auto;
@@ -257,6 +296,10 @@ body{
     .container{
         width: 75%;
     }
+    #lng{
+        margin: 2px;
+        padding: 5px;
+    }
 }
 
 @media (max-width: 565px){
@@ -274,13 +317,17 @@ body{
         width: 95%;
     }
 
-    .title, .title2 h1{
+    .title h1, .title2 h1{
         font-size: 25px;
+    }
+
+    .info img{
+        width: 150px;
     }
 }
 
 @media (max-width: 360px){
-    .title, .title2 h1{
+    .title h1, .title2 h1{
         font-size: 20px;
     }
 }
